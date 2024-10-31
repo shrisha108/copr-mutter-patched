@@ -11,9 +11,9 @@
 
 %global tarball_version %%(echo %{version} | tr '~' '.')
 
-Name:          mutter
+Name:          mutter-3buf
 Version:       47.1
-Release:       %autorelease
+Release:       10.patched%{?dist}
 Summary:       Window and compositing manager based on Clutter
 
 # Automatically converted from old format: GPLv2+ - review is highly recommended.
