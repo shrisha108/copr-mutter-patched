@@ -46,7 +46,7 @@ Patch:         0001-wayland-pointer-constraints-Warp-pointer-after-destr.patch
 # Triple buffer patch
 # https://gitlab.gnome.org/GNOME/mutter/-/merge_requests/1441
 # https://salsa.debian.org/gnome-team/mutter/-/blob/debian/47.1-1/debian/patches/debian/Support-Dynamic-triple-double-buffering.patch?ref_type=tags
-Patch:         0001-Support-Dynamic-triple-double-buffering.patch
+Patch:         https://github.com/valokardin/copr-mutter-patched/blob/main/patches/0001-Support-Dynamic-triple-double-buffering.patch
 
 BuildRequires: pkgconfig(gobject-introspection-1.0) >= 1.41.0
 BuildRequires: pkgconfig(sm)
