@@ -77,22 +77,22 @@ BuildRequires: pkgconfig(libpipewire-0.3) >= %{pipewire_version}
 BuildRequires: pkgconfig(sysprof-capture-4)
 BuildRequires: sysprof-devel
 BuildRequires: pkgconfig(libsystemd)
-BuildRequires: xorg-x11-server-Xvfb
+# BuildRequires: xorg-x11-server-Xvfb
 BuildRequires: pkgconfig(xkeyboard-config)
 BuildRequires: desktop-file-utils
-BuildRequires: cvt
+# BuildRequires: cvt
 # Bootstrap requirements
 BuildRequires: gettext-devel git-core
 BuildRequires: pkgconfig(libcanberra)
 BuildRequires: pkgconfig(gsettings-desktop-schemas) >= %{gsettings_desktop_schemas_version}
-BuildRequires: pkgconfig(gnome-settings-daemon)
+# BuildRequires: pkgconfig(gnome-settings-daemon)
 BuildRequires: meson
 BuildRequires: pkgconfig(gbm)
 BuildRequires: pkgconfig(gnome-desktop-4)
 BuildRequires: pkgconfig(gudev-1.0)
 BuildRequires: pkgconfig(libdrm)
 BuildRequires: pkgconfig(libstartup-notification-1.0)
-BuildRequires: pkgconfig(wayland-eglstream)
+# BuildRequires: pkgconfig(wayland-eglstream)
 BuildRequires: pkgconfig(wayland-protocols)
 BuildRequires: pkgconfig(wayland-server)
 BuildRequires: pkgconfig(lcms2) >= %{lcms2_version}
@@ -103,7 +103,7 @@ BuildRequires: pkgconfig(libeis-1.0) >= %{libei_version}
 BuildRequires: pkgconfig(libinput) >= %{libinput_version}
 BuildRequires: pkgconfig(xwayland)
 
-BuildRequires: python3-dbusmock
+# BuildRequires: python3-dbusmock
 
 Requires: control-center-filesystem
 Requires: gsettings-desktop-schemas%{?_isa} >= %{gsettings_desktop_schemas_version}
