@@ -1,4 +1,4 @@
-%global glib_version 2.75.1
+%global glib_version 2.80.4
 %global gtk3_version 3.19.8
 %global gtk4_version 4.0.0
 %global gsettings_desktop_schemas_version 47.1
