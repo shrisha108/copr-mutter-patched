@@ -84,7 +84,7 @@ BuildRequires: desktop-file-utils
 # Bootstrap requirements
 BuildRequires: gettext-devel git-core
 BuildRequires: pkgconfig(libcanberra)
-BuildRequires: pkgconfig(gsettings-desktop-schemas) >= %{gsettings_desktop_schemas_version}
+# BuildRequires: pkgconfig(gsettings-desktop-schemas) >= %{gsettings_desktop_schemas_version}
 # BuildRequires: pkgconfig(gnome-settings-daemon)
 BuildRequires: meson
 BuildRequires: pkgconfig(gbm)
@@ -92,18 +92,19 @@ BuildRequires: pkgconfig(gnome-desktop-4)
 BuildRequires: pkgconfig(gudev-1.0)
 BuildRequires: pkgconfig(libdrm)
 BuildRequires: pkgconfig(libstartup-notification-1.0)
-# BuildRequires: pkgconfig(wayland-eglstream)
+BuildRequires: pkgconfig(wayland-eglstream)
 BuildRequires: pkgconfig(wayland-protocols)
 BuildRequires: pkgconfig(wayland-server)
 BuildRequires: pkgconfig(lcms2) >= %{lcms2_version}
 BuildRequires: pkgconfig(colord) >= %{colord_version}
 BuildRequires: pkgconfig(libei-1.0) >= %{libei_version}
 BuildRequires: pkgconfig(libeis-1.0) >= %{libei_version}
-
+BuildRequires: gsettings-desktop-schemas-devel
+BuildRequires: gnome-settings-daemon-devel
 BuildRequires: pkgconfig(libinput) >= %{libinput_version}
 BuildRequires: pkgconfig(xwayland)
 
-# BuildRequires: python3-dbusmock
+BuildRequires: python3-dbusmock
 
 Requires: control-center-filesystem
 Requires: gsettings-desktop-schemas%{?_isa} >= %{gsettings_desktop_schemas_version}
@@ -176,7 +177,7 @@ the functionality of the installed %{name} package.
 %autosetup -S git -n %{name}-%{tarball_version}
 
 %build
-# %meson -Degl_device=true -Dwayland_eglstream=true
+%meson -Degl_device=true -Dwayland_eglstream=true
 %meson_build
 
 %install
